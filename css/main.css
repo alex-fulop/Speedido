@@ -18,6 +18,14 @@
   --me-btn-color: #428CA5;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0 !important;
+}
+
 /*Utils*/
 .h-55 {
   height: 55%;
@@ -35,8 +43,8 @@
   width: 95%;
 }
 
-br-7 {
-  border-radius: 7px;
+.br-10 {
+  border-radius: 10px;
 }
 
 .off-bg {
@@ -62,6 +70,16 @@ br-7 {
 .section-hero {
   background-image: url("../img/background-img.png");
 
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: var(--main-white);
+}
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url(
+  "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 /* Drawing */
@@ -98,4 +116,64 @@ br-7 {
 
 .dot-dark {
   background-color: var(--dark-grey);
+}
+
+/*Assistant Cards */
+.card-name {
+  color: var(--main-accent);
+}
+
+.card-role {
+  font-weight: bold;
+}
+
+.card-reviews p, .card-name {
+  font-weight: lighter;
+}
+
+.assistant-cards {
+  position: relative;
+  width: 70rem;
+  right: 9rem;
+}
+
+.assistant-card {
+  width: 16rem;
+  margin-right: 1.5rem;
+}
+
+.card-skill {
+  font-size: 12px;
+  text-align: center;
+  border: 2px solid var(--main-accent);
+  border-radius: 30px;
+  padding: .5rem .5rem;
+}
+
+/*Testimonials */
+.section-pre-title {
+  font-weight: bold;
+  color: var(--main-accent);
+  padding-bottom: 4rem;
+}
+
+.section-title {
+  font-weight: lighter;
+}
+
+.testimonial-name, .testimonial-text, .section-pre-title, .section-title {
+  text-align: center;
+}
+
+.testimonial-name {
+  font-size: 22px;
+  padding-bottom: 1rem;
+}
+
+.testimonial-text {
+  color: var(--dark-grey);
+}
+
+.testimonial-image {
+  width: 10rem;
 }
