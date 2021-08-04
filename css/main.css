@@ -18,6 +18,10 @@
   --me-btn-color: #428CA5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -55,8 +59,35 @@ p {
   background-color: var(--white);
 }
 
-.body {
-  font-family: "Segoe UI", sans-serif;
+body {
+  font-family: "Segoe UI", sans-serif !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, var(--ms-btn-color) 0%, var(--me-btn-color) 100%) 0;
+  border: 1px solid var(--main-white);
+  font-weight: bold;
+  font-size: 12px;
+  padding: .7rem 1rem;
+}
+
+.btn-primary:hover {
+  background: var(--white);
+  border: 1px solid var(--main-accent);
+  color: var(--main-accent);
+  font-weight: bold;
+  font-size: 12px;
+  padding: .7rem 1rem;
+}
+
+/* Navbar */
+.navbar-brand {
+  color: var(--main-accent) !important;
+}
+
+.custom-toggler{
+  color: var(--main-white)
 }
 
 .section {
@@ -69,7 +100,6 @@ p {
 
 .section-hero {
   background-image: url("../img/background-img.png");
-
 }
 
 .custom-toggler.navbar-toggler {
@@ -119,6 +149,11 @@ p {
 }
 
 /*Assistant Cards */
+.card:hover {
+  position: relative;
+  bottom: 1rem;
+}
+
 .card-name {
   color: var(--main-accent);
 }
@@ -133,13 +168,12 @@ p {
 
 .assistant-cards {
   position: relative;
-  width: 70rem;
-  right: 9rem;
+  width: 50rem;
+  right: 6rem;
 }
 
 .assistant-card {
-  width: 16rem;
-  margin-right: 1.5rem;
+  width: 15rem;
 }
 
 .card-skill {
@@ -150,7 +184,7 @@ p {
   padding: .5rem .5rem;
 }
 
-/*Testimonials */
+/* Testimonials */
 .section-pre-title {
   font-weight: bold;
   color: var(--main-accent);
@@ -175,5 +209,153 @@ p {
 }
 
 .testimonial-image {
-  width: 10rem;
+  width: 8rem;
+  margin-bottom: 1rem;
+}
+
+/* Packages */
+.package {
+  height: 50vh;
+}
+
+.package-title {
+  font-weight: bolder;
+  font-size: 26px;
+
+}
+
+.price {
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+.dollar-sign {
+  font-size: 16px;
+}
+
+.footer {
+  border-top: 2px solid var(--light-grey);
+}
+
+.form-btn {
+  width: auto;
+  margin: auto;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1400px) {
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
+
+  .sec2, .sec3, .sec4 {
+    height: 120vh;
+  }
+
+  .assistant-card-area {
+    flex-direction: column-reverse;
+  }
+
+  .assistant-card-area-title {
+    text-align: center;
+  }
+
+  .assistant-card {
+    width: auto;
+  }
+
+ .assistant-cards{
+   width: auto;
+   position: static;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .card-area-2 {
+   margin-bottom: 2rem;
+ }
+}
+
+@media only screen and (max-width: 1200px) {
+  .sec1 {
+    height: 110vh;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .sec1 {
+  height: 110vh;
+  }
+
+  .sec2 {
+    height: 130vh;
+  }
+
+  .sec3 {
+    height: 270vh;
+  }
+
+  .sec5, .sec6 {
+    height: 150vh;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .assistant-card-area {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .assistant-card{
+    margin-top: 2rem;
+  }
+
+  .card-area-1 {
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  .card-area-2 {
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  .footer-address {
+    display: none;
+  }
+
+  .footer-social-icon {
+    margin: .5rem 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sec2 {
+    height: 160vh;
+  }
+
+  .sec3 {
+    height: 300vh;
+  }
+
+  .sec5 {
+    height: 200vh;
+  }
+
+  .sec6 {
+    height: 270vh;
+  }
+
+  .assistant-card-area {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+    .sec4 {
+      height: 210vh;
+    }
 }
