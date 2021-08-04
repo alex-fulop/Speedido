@@ -149,7 +149,12 @@ body {
 }
 
 /*Assistant Cards */
-.card:hover {
+.packages {
+  width: 90%;
+  margin: auto;
+}
+
+.card-package:hover {
   position: relative;
   bottom: 1rem;
 }
