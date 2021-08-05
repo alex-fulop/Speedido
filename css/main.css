@@ -286,7 +286,7 @@ body {
 }
 
 .ty-section {
-  height: 100vh;
+  height: 100%;
   width: 60%;
   margin: auto;
 }
