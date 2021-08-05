@@ -368,6 +368,10 @@ body {
     text-align: center;
   }
 
+  .drawing-area {
+    display: none !important;
+  }
+
   .assistant-card-area {
     display: flex;
     flex-direction: row;
