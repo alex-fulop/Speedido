@@ -137,6 +137,9 @@ body {
 
 .section-hero {
   background-image: url("../img/background-img.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .custom-toggler.navbar-toggler {
@@ -286,7 +289,7 @@ body {
 }
 
 .ty-section {
-  height: 100%;
+  height: 100vh;
   width: 60%;
   margin: auto;
 }
