@@ -178,10 +178,6 @@ body {
   right: 6rem;
 }
 
-.assistant-card {
-  width: 15rem;
-}
-
 .card-skills {
   height: 20vh;
 }
@@ -309,6 +305,10 @@ body {
     height: 150vh;
   }
 
+  .hero {
+    height: 40%;
+  }
+
   .hero-text {
     text-align: center;
   }
@@ -318,8 +318,13 @@ body {
     flex-direction: row;
   }
 
-  .assistant-card{
+  .assistant-card {
     margin-top: 2rem;
+    height: 30rem;
+  }
+
+  .card-skills {
+    height: auto;
   }
 
   .card-area-1 {
