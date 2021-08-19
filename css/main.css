@@ -46,13 +46,13 @@
 :root {
   --white: #FFF;
   --main-white: #F5F6F8;
+  --main-black: #000;
   --neutral-grey: #EFF0F2;
   --light-grey: #F5F6F8;
   --darker-grey: #939393;
   --dark-grey: #7A7A7A;
-  --main-accent: #39BAEB;
-  --ms-btn-color: #36C7FE;
-  --me-btn-color: #428CA5;
+  --main-accent: #A919C9;
+  --secondary-accent: #23426C;
 }
 
 html {
@@ -60,32 +60,39 @@ html {
 }
 
 body {
+  font-family: "Segoe UI", sans-serif;
   overflow-x: hidden;
+  color: var(--secondary-accent);
+}
+
+a {
+  color: var(--secondary-accent) !important;
+  font-weight: bold;
 }
 
 p {
   margin: 0 !important;
 }
 
+/* Btns */
+.btn-primary {
+  color: #fff;
+  background-color: var(--main-accent);
+  border-color: var(--main-accent);
+}
+
+/* Links */
+.nav-link:focus, .nav-link:hover {
+  color: var(--main-accent) !important;
+}
+
 /*Utils*/
-.h-55 {
-  height: 55%;
-}
-
-.h-35 {
-  height: 35%;
-}
-
-.h-20 {
-  height: 20%;
-}
-
-.w-95 {
-  width: 95%;
-}
-
 .br-10 {
   border-radius: 10px;
+}
+
+.main-accent {
+  color: var(--main-accent);
 }
 
 .off-bg {
@@ -96,62 +103,29 @@ p {
   background-color: var(--white);
 }
 
-.display-7 {
-  font-size: 24px;
-}
-
-body {
-  font-family: "Segoe UI", sans-serif !important;
-}
-
-/* Buttons */
-.btn-primary {
-  background: linear-gradient(90deg, var(--ms-btn-color) 0%, var(--me-btn-color) 100%) 0;
-  border: 1px solid var(--main-white);
-  font-weight: bold;
-  font-size: 12px;
-  padding: .7rem 1rem;
-}
-
-.btn-primary:hover {
-  background: var(--white);
-  border: 1px solid var(--main-accent);
-  color: var(--main-accent);
-  font-weight: bold;
-  font-size: 12px;
-  padding: .7rem 1rem;
-}
-
-/* Navbar */
-.navbar-brand {
-  color: var(--main-accent) !important;
-}
-
-.custom-toggler {
-  color: var(--main-white)
-}
-
 .section {
   height: 100vh;
 }
 
-.section-hero, .section-hero a {
-  color: var(--main-white);
+.section-hero {
+  text-align: center;
 }
 
-.section-hero {
-  background-image: url("../img/background-img.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+.section-hero p{
+  font-size: 22px;
+}
+
+.section-hero img {
+  width: 100%;
+}
+
+.navbar-brand {
+  font-weight: bolder;
 }
 
 .custom-toggler.navbar-toggler {
   border-color: var(--main-white);
 }
-
-/* Setting the stroke to green using rgb values (0, 128, 0) */
-
 .custom-toggler .navbar-toggler-icon {
   background-image: url(
   "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
