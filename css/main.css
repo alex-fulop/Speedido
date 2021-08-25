@@ -57,6 +57,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html,body{
+  margin:0;
+}
+
 body {
   font-family: "Segoe UI", sans-serif;
   overflow-x: hidden;
@@ -103,10 +107,12 @@ p {
 /* Sections*/
 .section {
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .section-alt {
-  height: 130vh;
+  height: 150vh;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -131,6 +137,10 @@ p {
   color: var(--white);
 }
 
+.sec2-title {
+  margin: 4rem 0;
+}
+
 .main-accent {
   color: var(--main-accent);
 }
@@ -148,7 +158,7 @@ p {
   font-size: 22px;
 }
 
-.section-hero img {
+.img-100 {
   width: 100%;
 }
 
@@ -164,7 +174,7 @@ p {
 /* Drawing */
 
 .drawing {
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -259,10 +269,6 @@ p {
   padding-bottom: 1rem;
 }
 
-.testimonial-text {
-  color: var(--dark-grey);
-}
-
 .testimonial-image {
   width: 8rem;
   margin-bottom: 1rem;
@@ -286,10 +292,6 @@ p {
 
 .dollar-sign {
   font-size: 16px;
-}
-
-.footer {
-  border-top: 2px solid var(--light-grey);
 }
 
 .form-btn {
@@ -317,131 +319,127 @@ p {
 
 /* Media queries */
 @media only screen and (max-width: 1400px) {
-  h1, h2, h3, h4 {
-    text-align: center;
-  }
+  /*h1, h2, h3, h4 {*/
+  /*  text-align: center;*/
+  /*}*/
 
-  .sec2, .sec3, .sec4 {
-    height: 120vh;
-  }
+  /*.assistant-card-area {*/
+  /*  flex-direction: column-reverse;*/
+  /*}*/
 
-  .assistant-card-area {
-    flex-direction: column-reverse;
-  }
+  /*.assistant-card-area-title {*/
+  /*  text-align: center;*/
+  /*}*/
 
-  .assistant-card-area-title {
-    text-align: center;
-  }
+  /*.assistant-card {*/
+  /*  width: auto;*/
+  /*}*/
 
-  .assistant-card {
-    width: auto;
-  }
+  /*.assistant-cards {*/
+  /*  width: auto;*/
+  /*  position: static;*/
+  /*  justify-content: center;*/
+  /*  align-items: center;*/
+  /*}*/
 
-  .assistant-cards {
-    width: auto;
-    position: static;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card-area-2 {
-    margin-bottom: 2rem;
-  }
+  /*.card-area-2 {*/
+  /*  margin-bottom: 2rem;*/
+  /*}*/
 }
 
 @media only screen and (max-width: 1200px) {
-  .sec1 {
-    height: 110vh;
-  }
+  /*.sec1 {*/
+  /*  height: 110vh;*/
+  /*}*/
 }
 
 @media only screen and (max-width: 992px) {
-  .sec1 {
-    height: 110vh;
-  }
+  /*.sec1 {*/
+  /*  height: 110vh;*/
+  /*}*/
 
-  .sec2 {
-    height: 130vh;
-  }
+  /*.sec2 {*/
+  /*  height: 130vh;*/
+  /*}*/
 
-  .sec3 {
-    height: 270vh;
-  }
+  /*.sec3 {*/
+  /*  height: 270vh;*/
+  /*}*/
 
-  .sec5, .sec6 {
-    height: 150vh;
-  }
+  /*.sec5, .sec6 {*/
+  /*  height: 150vh;*/
+  /*}*/
 
-  .hero {
-    height: 40%;
-  }
+  /*.hero {*/
+  /*  height: 40%;*/
+  /*}*/
 
-  .hero-text {
-    text-align: center;
-  }
+  /*.hero-text {*/
+  /*  text-align: center;*/
+  /*}*/
 
-  .drawing-area {
-    display: none !important;
-  }
+  /*.drawing-area {*/
+  /*  display: none !important;*/
+  /*}*/
 
-  .assistant-card-area {
-    display: flex;
-    flex-direction: row;
-  }
+  /*.assistant-card-area {*/
+  /*  display: flex;*/
+  /*  flex-direction: row;*/
+  /*}*/
 
-  .assistant-card {
-    margin-top: 2rem;
-    height: 30rem;
-  }
+  /*.assistant-card {*/
+  /*  margin-top: 2rem;*/
+  /*  height: 30rem;*/
+  /*}*/
 
-  .card-skills {
-    height: auto;
-  }
+  /*.card-skills {*/
+  /*  height: auto;*/
+  /*}*/
 
-  .card-area-1 {
-    order: 2;
-    margin-bottom: 0;
-  }
+  /*.card-area-1 {*/
+  /*  order: 2;*/
+  /*  margin-bottom: 0;*/
+  /*}*/
 
-  .card-area-2 {
-    order: 1;
-    margin-bottom: 0;
-  }
+  /*.card-area-2 {*/
+  /*  order: 1;*/
+  /*  margin-bottom: 0;*/
+  /*}*/
 
-  .footer-address {
-    display: none;
-  }
+  /*.footer-address {*/
+  /*  display: none;*/
+  /*}*/
 
-  .footer-social-icon {
-    margin: .5rem 0;
-  }
+  /*.footer-social-icon {*/
+  /*  margin: .5rem 0;*/
+  /*}*/
 }
 
 @media only screen and (max-width: 768px) {
-  .sec2 {
-    height: 160vh;
-  }
+  /*.sec2 {*/
+  /*  height: 160vh;*/
+  /*}*/
 
-  .sec3 {
-    height: 300vh;
-  }
+  /*.sec3 {*/
+  /*  height: 300vh;*/
+  /*}*/
 
-  .sec5 {
-    height: 200vh;
-  }
+  /*.sec5 {*/
+  /*  height: 200vh;*/
+  /*}*/
 
-  .sec6 {
-    height: 270vh;
-  }
+  /*.sec6 {*/
+  /*  height: 270vh;*/
+  /*}*/
 
-  .assistant-card-area {
-    align-items: center;
-    justify-content: center;
-  }
+  /*.assistant-card-area {*/
+  /*  align-items: center;*/
+  /*  justify-content: center;*/
+  /*}*/
 }
 
 @media only screen and (max-width: 576px) {
-  .sec4 {
-    height: 210vh;
-  }
+  /*.sec4 {*/
+  /*  height: 210vh;*/
+  /*}*/
 }
